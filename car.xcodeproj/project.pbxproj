@@ -6,14 +6,84 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A534F6D2F79460500B20E17 /* SwiftOBD2 in Frameworks */ = {isa = PBXBuildFile; productRef = 1A534F6C2F79460500B20E17 /* SwiftOBD2 */; };
+		1A534F892F7966DF00B20E17 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A534F882F7966DF00B20E17 /* WidgetKit.framework */; };
+		1A534F8B2F7966DF00B20E17 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A534F8A2F7966DF00B20E17 /* SwiftUI.framework */; };
+		1A534F9C2F7966E000B20E17 /* TripWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A534F862F7966DF00B20E17 /* TripWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A534F9A2F7966E000B20E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A534F532F793EA900B20E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A534F852F7966DF00B20E17;
+			remoteInfo = TripWidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A534FA12F7966E000B20E17 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A534F9C2F7966E000B20E17 /* TripWidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A534F5B2F793EAA00B20E17 /* car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A534F862F7966DF00B20E17 /* TripWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TripWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A534F882F7966DF00B20E17 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1A534F8A2F7966DF00B20E17 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1A534F6F2F795D3500B20E17 /* Exceptions for "car" folder in "car" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A534F5A2F793EA900B20E17 /* car */;
+		};
+		1A534FA02F7966E000B20E17 /* Exceptions for "TripWidgetExtension" folder in "TripWidgetExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A534F852F7966DF00B20E17 /* TripWidgetExtensionExtension */;
+		};
+		1A534FA32F79670600B20E17 /* Exceptions for "car" folder in "TripWidgetExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LiveActivityAttributes.swift,
+			);
+			target = 1A534F852F7966DF00B20E17 /* TripWidgetExtensionExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1A534F5D2F793EAA00B20E17 /* car */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1A534F6F2F795D3500B20E17 /* Exceptions for "car" folder in "car" target */,
+				1A534FA32F79670600B20E17 /* Exceptions for "car" folder in "TripWidgetExtensionExtension" target */,
+			);
 			path = car;
+			sourceTree = "<group>";
+		};
+		1A534F8C2F7966DF00B20E17 /* TripWidgetExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1A534FA02F7966E000B20E17 /* Exceptions for "TripWidgetExtension" folder in "TripWidgetExtensionExtension" target */,
+			);
+			path = TripWidgetExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +93,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A534F6D2F79460500B20E17 /* SwiftOBD2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A534F832F7966DF00B20E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A534F8B2F7966DF00B20E17 /* SwiftUI.framework in Frameworks */,
+				1A534F892F7966DF00B20E17 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				1A534F5D2F793EAA00B20E17 /* car */,
+				1A534F8C2F7966DF00B20E17 /* TripWidgetExtension */,
+				1A534F872F7966DF00B20E17 /* Frameworks */,
 				1A534F5C2F793EAA00B20E17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +123,18 @@
 			isa = PBXGroup;
 			children = (
 				1A534F5B2F793EAA00B20E17 /* car.app */,
+				1A534F862F7966DF00B20E17 /* TripWidgetExtensionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A534F872F7966DF00B20E17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A534F882F7966DF00B20E17 /* WidgetKit.framework */,
+				1A534F8A2F7966DF00B20E17 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,20 +147,45 @@
 				1A534F572F793EA900B20E17 /* Sources */,
 				1A534F582F793EA900B20E17 /* Frameworks */,
 				1A534F592F793EA900B20E17 /* Resources */,
+				1A534FA12F7966E000B20E17 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A534F9B2F7966E000B20E17 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A534F5D2F793EAA00B20E17 /* car */,
 			);
 			name = car;
 			packageProductDependencies = (
+				1A534F6C2F79460500B20E17 /* SwiftOBD2 */,
 			);
 			productName = car;
 			productReference = 1A534F5B2F793EAA00B20E17 /* car.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1A534F852F7966DF00B20E17 /* TripWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A534F9D2F7966E000B20E17 /* Build configuration list for PBXNativeTarget "TripWidgetExtensionExtension" */;
+			buildPhases = (
+				1A534F822F7966DF00B20E17 /* Sources */,
+				1A534F832F7966DF00B20E17 /* Frameworks */,
+				1A534F842F7966DF00B20E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1A534F8C2F7966DF00B20E17 /* TripWidgetExtension */,
+			);
+			name = TripWidgetExtensionExtension;
+			packageProductDependencies = (
+			);
+			productName = TripWidgetExtensionExtension;
+			productReference = 1A534F862F7966DF00B20E17 /* TripWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +200,9 @@
 					1A534F5A2F793EA900B20E17 = {
 						CreatedOnToolsVersion = 26.4;
 					};
+					1A534F852F7966DF00B20E17 = {
+						CreatedOnToolsVersion = 26.4;
+					};
 				};
 			};
 			buildConfigurationList = 1A534F562F793EA900B20E17 /* Build configuration list for PBXProject "car" */;
@@ -94,18 +214,29 @@
 			);
 			mainGroup = 1A534F522F793EA900B20E17;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A534F6B2F79460500B20E17 /* XCRemoteSwiftPackageReference "SwiftOBD2" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A534F5C2F793EAA00B20E17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1A534F5A2F793EA900B20E17 /* car */,
+				1A534F852F7966DF00B20E17 /* TripWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1A534F592F793EA900B20E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A534F842F7966DF00B20E17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +253,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A534F822F7966DF00B20E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A534F9B2F7966E000B20E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A534F852F7966DF00B20E17 /* TripWidgetExtensionExtension */;
+			targetProxy = 1A534F9A2F7966E000B20E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A534F662F793EAB00B20E17 /* Debug */ = {
@@ -256,6 +402,11 @@
 				DEVELOPMENT_TEAM = NZ625X79RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = car/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Car;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The app needs Bluetooth permissions for OBD access.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +439,11 @@
 				DEVELOPMENT_TEAM = NZ625X79RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = car/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Car;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The app needs Bluetooth permissions for OBD access.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +459,66 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A534F9E2F7966E000B20E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NZ625X79RT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.bartekk.car.TripWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A534F9F2F7966E000B20E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NZ625X79RT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.bartekk.car.TripWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,7 +547,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1A534F9D2F7966E000B20E17 /* Build configuration list for PBXNativeTarget "TripWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A534F9E2F7966E000B20E17 /* Debug */,
+				1A534F9F2F7966E000B20E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A534F6B2F79460500B20E17 /* XCRemoteSwiftPackageReference "SwiftOBD2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kkonteh97/SwiftOBD2";
+			requirement = {
+				kind = revision;
+				revision = fe6def4e8599671dfc1b9597dbcdbc6a7c078b96;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A534F6C2F79460500B20E17 /* SwiftOBD2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A534F6B2F79460500B20E17 /* XCRemoteSwiftPackageReference "SwiftOBD2" */;
+			productName = SwiftOBD2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A534F532F793EA900B20E17 /* Project object */;
 }
